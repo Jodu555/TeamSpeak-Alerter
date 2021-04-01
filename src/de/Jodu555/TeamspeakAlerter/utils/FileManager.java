@@ -26,9 +26,9 @@ public class FileManager {
 
 		if (!configFile.exists()) {
 			GlobalHandler globalHandler = new GlobalHandler();
-			globalHandler.getServers().add(new TeamSpeakServer(1, "server4.jodu555.de", "test", "nickname"));
-			globalHandler.getAlerts().add(new AlertThing(1, "Live Check", "https://www.youtube.com/channel/UC2GBv0o0CbSj68lSbr5EUrQ",
-					"Jetzt live", new ArrayList<>(Arrays.asList("3KNYFKJQ+xQbMFFcwDMA9g9/0nQ=")), "XDXDXD", 10));
+			globalHandler.getServers().add(new TeamSpeakServer(1, "Server-IP", "test", "nickname"));
+			globalHandler.getAlerts().add(new AlertThing(1, "Live Check", "URL-ToCheck",
+					"Jetzt live", new ArrayList<>(Arrays.asList("CLIENT-LIST")), "Message", 10));
 			new Document("config", globalHandler).saveAsConfig(configFile);
 		}
 		load();
