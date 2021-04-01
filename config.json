@@ -1,0 +1,26 @@
+{
+  "config": {
+    "servers": [
+      {
+        "id": 1,
+        "address": "Example Address",
+        "queryPassword": "ExamplePassword",
+        "nickname": "Bot-NickName"
+      }
+    ],
+    "alerts": [
+      {
+        "serverid": 1,
+        "name": "Check-Name",
+        "proofURL": "Validation URL",
+        "containURL": "Website Data Contains",
+        "clientList": [
+          "Poke-Client1",
+		  "Poke-Client2"
+        ],
+        "message": "PokeMessage",
+        "checkInSeconds": 10
+      }
+    ]
+  }
+}
